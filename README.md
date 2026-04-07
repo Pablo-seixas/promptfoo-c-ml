@@ -1,5 +1,7 @@
 promptfoo c# ml
 
+![capa do projeto](Captura_de_tela_20260406_212155.png)
+
 Este projeto demonstra um pipeline completo de avaliação de machine learning executado localmente, combinando um backend em C# com ML.NET e validação automatizada utilizando Promptfoo. O sistema classifica entradas de texto em categorias específicas e valida o comportamento do modelo através de testes estruturados.
 
 objetivo
