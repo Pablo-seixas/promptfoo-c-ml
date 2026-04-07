@@ -1,0 +1,7 @@
+bin/
+obj/
+*.log
+results.json
+results.csv
+results.html
+evidencia.txt
