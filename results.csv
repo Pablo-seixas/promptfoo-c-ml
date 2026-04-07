@@ -1,0 +1,13 @@
+Description,[http://localhost:5000/predict] minha fatura veio duplicada no cartao,Status,Score,Named Scores,Grader Reason,Comment,[http://localhost:5000/predict] nao consigo redefinir minha senha e entrar na conta,Status,Score,Named Scores,Grader Reason,Comment,[http://localhost:5000/predict] a aplicacao esta com timeout e erro ao salvar,Status,Score,Named Scores,Grader Reason,Comment,[http://localhost:5000/predict] houve acesso indevido e tentativas de login suspeitas,Status,Score,Named Scores,Grader Reason,Comment
+Caso de cobranca deve parecer billing,"Categoria prevista: billing
+Confianca: 63,00%
+Resumo: O texto foi classificado como billing.",PASS,1.00,,All assertions passed,,,,,,,,,,,,,,,,,,,
+Caso de conta deve parecer account,,,,,,,"Categoria prevista: account
+Confianca: 99,17%
+Resumo: O texto foi classificado como account.",PASS,1.00,,All assertions passed,,,,,,,,,,,,,
+Caso tecnico deve parecer technical,,,,,,,,,,,,,"Categoria prevista: technical
+Confianca: 96,89%
+Resumo: O texto foi classificado como technical.",PASS,1.00,,All assertions passed,,,,,,,
+Caso de seguranca deve parecer security,,,,,,,,,,,,,,,,,,,"Categoria prevista: security
+Confianca: 99,88%
+Resumo: O texto foi classificado como security.",PASS,1.00,,All assertions passed,

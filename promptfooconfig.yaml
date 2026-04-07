@@ -1,0 +1,47 @@
+description: Avaliacao local de backend C# com ML.NET
+
+providers:
+  - id: http
+    config:
+      url: http://localhost:5000/predict
+      method: POST
+      headers:
+        Content-Type: application/json
+      body:
+        text: "{{prompt}}"
+      transformResponse: "json.answer"
+
+prompts:
+  - "minha fatura veio duplicada no cartao"
+  - "nao consigo redefinir minha senha e entrar na conta"
+  - "a aplicacao esta com timeout e erro ao salvar"
+  - "houve acesso indevido e tentativas de login suspeitas"
+
+tests:
+  - description: Caso de cobranca deve parecer billing
+    prompts:
+      - "minha fatura veio duplicada no cartao"
+    assert:
+      - type: contains
+        value: "billing"
+
+  - description: Caso de conta deve parecer account
+    prompts:
+      - "nao consigo redefinir minha senha e entrar na conta"
+    assert:
+      - type: contains
+        value: "account"
+
+  - description: Caso tecnico deve parecer technical
+    prompts:
+      - "a aplicacao esta com timeout e erro ao salvar"
+    assert:
+      - type: contains
+        value: "technical"
+
+  - description: Caso de seguranca deve parecer security
+    prompts:
+      - "houve acesso indevido e tentativas de login suspeitas"
+    assert:
+      - type: contains
+        value: "security"

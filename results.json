@@ -1,0 +1,762 @@
+{
+  "evalId": "eval-Xgv-2026-04-07T00:32:37",
+  "results": {
+    "version": 3,
+    "timestamp": "2026-04-07T00:32:37.700Z",
+    "prompts": [
+      {
+        "id": "f394f8d560ae91666fcd4fe12dfedbb7d2fed9a3e80df760eb70d9aa4114ba65",
+        "raw": "minha fatura veio duplicada no cartao",
+        "label": "minha fatura veio duplicada no cartao",
+        "provider": "http://localhost:5000/predict",
+        "metrics": {
+          "score": 1,
+          "testPassCount": 1,
+          "testFailCount": 0,
+          "testErrorCount": 0,
+          "assertPassCount": 1,
+          "assertFailCount": 0,
+          "totalLatencyMs": 53,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0
+        }
+      },
+      {
+        "id": "56766dc2d4d291bd295ae13f671b18cf4c88dfb74f656a67b607d4b933e0c4e7",
+        "raw": "nao consigo redefinir minha senha e entrar na conta",
+        "label": "nao consigo redefinir minha senha e entrar na conta",
+        "provider": "http://localhost:5000/predict",
+        "metrics": {
+          "score": 1,
+          "testPassCount": 1,
+          "testFailCount": 0,
+          "testErrorCount": 0,
+          "assertPassCount": 1,
+          "assertFailCount": 0,
+          "totalLatencyMs": 47,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0
+        }
+      },
+      {
+        "id": "c0d0cdfce264898ed357dc95d9a32177e6e5edb5cc0dc2a9ca44ae2314501ec6",
+        "raw": "a aplicacao esta com timeout e erro ao salvar",
+        "label": "a aplicacao esta com timeout e erro ao salvar",
+        "provider": "http://localhost:5000/predict",
+        "metrics": {
+          "score": 1,
+          "testPassCount": 1,
+          "testFailCount": 0,
+          "testErrorCount": 0,
+          "assertPassCount": 1,
+          "assertFailCount": 0,
+          "totalLatencyMs": 31,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0
+        }
+      },
+      {
+        "id": "ed59f8450e8808de98b0ed9bc76d371e171a186b72264681876071934dde8eda",
+        "raw": "houve acesso indevido e tentativas de login suspeitas",
+        "label": "houve acesso indevido e tentativas de login suspeitas",
+        "provider": "http://localhost:5000/predict",
+        "metrics": {
+          "score": 1,
+          "testPassCount": 1,
+          "testFailCount": 0,
+          "testErrorCount": 0,
+          "assertPassCount": 1,
+          "assertFailCount": 0,
+          "totalLatencyMs": 38,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains",
+                "value": "billing"
+              }
+            }
+          ]
+        },
+        "id": "e640b9ec-fd13-472a-a4b6-d8c52e99df9e",
+        "latencyMs": 53,
+        "namedScores": {},
+        "prompt": {
+          "raw": "minha fatura veio duplicada no cartao",
+          "label": "minha fatura veio duplicada no cartao",
+          "config": {}
+        },
+        "promptId": "f394f8d560ae91666fcd4fe12dfedbb7d2fed9a3e80df760eb70d9aa4114ba65",
+        "promptIdx": 0,
+        "provider": {
+          "id": "http://localhost:5000/predict",
+          "label": ""
+        },
+        "response": {
+          "raw": "{\"category\":\"billing\",\"confidence\":0.63,\"answer\":\"Categoria prevista: billing\\nConfianca: 63,00%\\nResumo: O texto foi classificado como billing.\"}",
+          "latencyMs": 53,
+          "cached": true,
+          "metadata": {
+            "http": {
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "content-type": "application/json; charset=utf-8",
+                "date": "Tue, 07 Apr 2026 00:15:07 GMT",
+                "server": "Kestrel",
+                "transfer-encoding": "chunked"
+              }
+            }
+          },
+          "output": "Categoria prevista: billing\nConfianca: 63,00%\nResumo: O texto foi classificado como billing.",
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "Caso de cobranca deve parecer billing",
+          "prompts": [
+            "minha fatura veio duplicada no cartao"
+          ],
+          "assert": [
+            {
+              "type": "contains",
+              "value": "billing"
+            }
+          ],
+          "vars": {},
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {},
+        "metadata": {
+          "http": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "content-type": "application/json; charset=utf-8",
+              "date": "Tue, 07 Apr 2026 00:15:07 GMT",
+              "server": "Kestrel",
+              "transfer-encoding": "chunked"
+            }
+          },
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains",
+                "value": "account"
+              }
+            }
+          ]
+        },
+        "id": "7bda7171-b55b-4145-ac08-3490ab7a4572",
+        "latencyMs": 47,
+        "namedScores": {},
+        "prompt": {
+          "raw": "nao consigo redefinir minha senha e entrar na conta",
+          "label": "nao consigo redefinir minha senha e entrar na conta",
+          "config": {}
+        },
+        "promptId": "56766dc2d4d291bd295ae13f671b18cf4c88dfb74f656a67b607d4b933e0c4e7",
+        "promptIdx": 1,
+        "provider": {
+          "id": "http://localhost:5000/predict",
+          "label": ""
+        },
+        "response": {
+          "raw": "{\"category\":\"account\",\"confidence\":0.9917,\"answer\":\"Categoria prevista: account\\nConfianca: 99,17%\\nResumo: O texto foi classificado como account.\"}",
+          "latencyMs": 47,
+          "cached": true,
+          "metadata": {
+            "http": {
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "content-type": "application/json; charset=utf-8",
+                "date": "Tue, 07 Apr 2026 00:15:07 GMT",
+                "server": "Kestrel",
+                "transfer-encoding": "chunked"
+              }
+            }
+          },
+          "output": "Categoria prevista: account\nConfianca: 99,17%\nResumo: O texto foi classificado como account.",
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "Caso de conta deve parecer account",
+          "prompts": [
+            "nao consigo redefinir minha senha e entrar na conta"
+          ],
+          "assert": [
+            {
+              "type": "contains",
+              "value": "account"
+            }
+          ],
+          "vars": {},
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {},
+        "metadata": {
+          "http": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "content-type": "application/json; charset=utf-8",
+              "date": "Tue, 07 Apr 2026 00:15:07 GMT",
+              "server": "Kestrel",
+              "transfer-encoding": "chunked"
+            }
+          },
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains",
+                "value": "technical"
+              }
+            }
+          ]
+        },
+        "id": "eb5ac317-b54a-44b4-b69e-3fd8d98e2f9f",
+        "latencyMs": 31,
+        "namedScores": {},
+        "prompt": {
+          "raw": "a aplicacao esta com timeout e erro ao salvar",
+          "label": "a aplicacao esta com timeout e erro ao salvar",
+          "config": {}
+        },
+        "promptId": "c0d0cdfce264898ed357dc95d9a32177e6e5edb5cc0dc2a9ca44ae2314501ec6",
+        "promptIdx": 2,
+        "provider": {
+          "id": "http://localhost:5000/predict",
+          "label": ""
+        },
+        "response": {
+          "raw": "{\"category\":\"technical\",\"confidence\":0.9689,\"answer\":\"Categoria prevista: technical\\nConfianca: 96,89%\\nResumo: O texto foi classificado como technical.\"}",
+          "latencyMs": 31,
+          "cached": true,
+          "metadata": {
+            "http": {
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "content-type": "application/json; charset=utf-8",
+                "date": "Tue, 07 Apr 2026 00:15:07 GMT",
+                "server": "Kestrel",
+                "transfer-encoding": "chunked"
+              }
+            }
+          },
+          "output": "Categoria prevista: technical\nConfianca: 96,89%\nResumo: O texto foi classificado como technical.",
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "Caso tecnico deve parecer technical",
+          "prompts": [
+            "a aplicacao esta com timeout e erro ao salvar"
+          ],
+          "assert": [
+            {
+              "type": "contains",
+              "value": "technical"
+            }
+          ],
+          "vars": {},
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 2,
+        "vars": {},
+        "metadata": {
+          "http": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "content-type": "application/json; charset=utf-8",
+              "date": "Tue, 07 Apr 2026 00:15:07 GMT",
+              "server": "Kestrel",
+              "transfer-encoding": "chunked"
+            }
+          },
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains",
+                "value": "security"
+              }
+            }
+          ]
+        },
+        "id": "911df74a-5d4a-4a7b-ad8a-f77072ed4bd3",
+        "latencyMs": 38,
+        "namedScores": {},
+        "prompt": {
+          "raw": "houve acesso indevido e tentativas de login suspeitas",
+          "label": "houve acesso indevido e tentativas de login suspeitas",
+          "config": {}
+        },
+        "promptId": "ed59f8450e8808de98b0ed9bc76d371e171a186b72264681876071934dde8eda",
+        "promptIdx": 3,
+        "provider": {
+          "id": "http://localhost:5000/predict",
+          "label": ""
+        },
+        "response": {
+          "raw": "{\"category\":\"security\",\"confidence\":0.9988,\"answer\":\"Categoria prevista: security\\nConfianca: 99,88%\\nResumo: O texto foi classificado como security.\"}",
+          "latencyMs": 38,
+          "cached": true,
+          "metadata": {
+            "http": {
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "content-type": "application/json; charset=utf-8",
+                "date": "Tue, 07 Apr 2026 00:15:07 GMT",
+                "server": "Kestrel",
+                "transfer-encoding": "chunked"
+              }
+            }
+          },
+          "output": "Categoria prevista: security\nConfianca: 99,88%\nResumo: O texto foi classificado como security.",
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "Caso de seguranca deve parecer security",
+          "prompts": [
+            "houve acesso indevido e tentativas de login suspeitas"
+          ],
+          "assert": [
+            {
+              "type": "contains",
+              "value": "security"
+            }
+          ],
+          "vars": {},
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 3,
+        "vars": {},
+        "metadata": {
+          "http": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "content-type": "application/json; charset=utf-8",
+              "date": "Tue, 07 Apr 2026 00:15:07 GMT",
+              "server": "Kestrel",
+              "transfer-encoding": "chunked"
+            }
+          },
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      }
+    ],
+    "stats": {
+      "successes": 4,
+      "failures": 0,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 4,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0
+          }
+        }
+      },
+      "durationMs": 106,
+      "evaluationDurationMs": 106
+    }
+  },
+  "config": {
+    "description": "Avaliacao local de backend C# com ML.NET",
+    "prompts": [
+      "minha fatura veio duplicada no cartao",
+      "nao consigo redefinir minha senha e entrar na conta",
+      "a aplicacao esta com timeout e erro ao salvar",
+      "houve acesso indevido e tentativas de login suspeitas"
+    ],
+    "providers": [
+      {
+        "id": "http",
+        "config": {
+          "url": "http://localhost:5000/predict",
+          "method": "POST",
+          "headers": {
+            "Content-Type": "application/json"
+          },
+          "body": {
+            "text": "{{prompt}}"
+          },
+          "transformResponse": "json.answer"
+        }
+      }
+    ],
+    "tests": [
+      {
+        "description": "Caso de cobranca deve parecer billing",
+        "prompts": [
+          "minha fatura veio duplicada no cartao"
+        ],
+        "assert": [
+          {
+            "type": "contains",
+            "value": "billing"
+          }
+        ]
+      },
+      {
+        "description": "Caso de conta deve parecer account",
+        "prompts": [
+          "nao consigo redefinir minha senha e entrar na conta"
+        ],
+        "assert": [
+          {
+            "type": "contains",
+            "value": "account"
+          }
+        ]
+      },
+      {
+        "description": "Caso tecnico deve parecer technical",
+        "prompts": [
+          "a aplicacao esta com timeout e erro ao salvar"
+        ],
+        "assert": [
+          {
+            "type": "contains",
+            "value": "technical"
+          }
+        ]
+      },
+      {
+        "description": "Caso de seguranca deve parecer security",
+        "prompts": [
+          "houve acesso indevido e tentativas de login suspeitas"
+        ],
+        "assert": [
+          {
+            "type": "contains",
+            "value": "security"
+          }
+        ]
+      }
+    ],
+    "outputPath": [
+      "results.json"
+    ],
+    "extensions": []
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.121.3",
+    "nodeVersion": "v25.9.0",
+    "platform": "linux",
+    "arch": "x64",
+    "exportedAt": "2026-04-07T00:32:38.304Z",
+    "evaluationCreatedAt": "2026-04-07T00:32:37.700Z"
+  }
+}
